@@ -5,7 +5,6 @@ export default function Home() {
   return (
    <>
    <Header />
-   <h1 className = 'font-sans'>This is Next Js portfolio</h1>
    </>
   );
 }
