@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-
+import About from "../About/page";
 const NavBar = () => {
   const [navbar, setNavBar] = useState(false);
   return (

@@ -1,18 +1,14 @@
 "use client";
 import React from "react";
+import About from "../About/page";
 import NavBar from "../NavBar/page";
 const Header = () => {
   return (
     <>
       <NavBar />
-      <section
-        id="about"
-        className="text-white h-screen bg-black text-center flex"
-      >
-        <h1 className="m-auto font-serif text-7xl text-purple-600 font-bold">
-          ABout
-        </h1>
-      </section>
+    <About
+
+    />
       <section id="blog" className="text-white h-screen  text-center flex">
         <h1 className="m-auto font-serif text-7xl text-purple-600 font-bold">
           Blog
