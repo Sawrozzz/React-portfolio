@@ -20,10 +20,9 @@ const About = () => {
           </p>
         </div>
         <div className="md:flex md:items-center md:justify-center">
-        <div className="md:flex-shrink-0 relative">
-          <img className="mx-auto h-64 w-64 rounded-full transition-transform duration-500 transform hover:scale-110" src="image.png" alt="John Doe" />
-          <div className="absolute inset-0 bg-indigo-600 opacity-0 hover:opacity-50 rounded-full transition-opacity duration-500"></div>
-        </div>
+        <div className="rounded-full overflow-hidden outline">
+        <img src="image.png" alt="Placeholder" className=" object-cover cursor-pointer  transform hover:scale-105 transition-transform" />
+      </div>
         <div className="mt-4 md:mt-0 md:ml-6">
           <div className="uppercase tracking-wide text-sm text-indigo-600 font-semibold">Web Developer</div>
           <p className="block mt-1 text-lg leading-tight font-semibold text-gray-900">Saroj Adhikari</p>
