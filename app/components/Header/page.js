@@ -1,31 +1,27 @@
-"use client";
+
 import React from "react";
 import About from "../About/page";
+import Contact from "../Contact/page";
 import NavBar from "../NavBar/page";
+import Project from "../Project/page";
+import Skill from "../Skill/page";
 const Header = () => {
   return (
     <>
       <NavBar />
-    <About
+      <section id="about">
+        <About />
+      </section>
+      <section id="project">
+        <Project />
+      </section>
 
-    />
-      <section id="blog" className="text-white h-screen  text-center flex">
-        <h1 className="m-auto font-serif text-7xl text-purple-600 font-bold">
-          Blog
-        </h1>
+      <section id="skill">
+        <Skill />
       </section>
-      <section
-        id="skill"
-        className="text-white h-screen bg-black text-center flex"
-      >
-        <h1 className="m-auto font-serif text-7xl text-purple-600 font-bold">
-          Skills
-        </h1>
-      </section>
-      <section id="contact" className="text-white h-screen  text-center flex">
-        <h1 className="m-auto font-serif text-7xl text-purple-600 font-bold">
-          Contact
-        </h1>
+
+      <section id="contact">
+        <Contact />
       </section>
     </>
   );
