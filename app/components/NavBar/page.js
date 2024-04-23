@@ -44,22 +44,22 @@ const NavBar = () => {
               }`}
             >
               <ul className=" h-screen md:h-auto items-center justify-center md:flex">
-                <li className="pd-6 text-xl text-black py-2 md:px-6 text-center  md:border-b-0hover:transform hover:scale-105 transition-transform  md:hover:text-blue-400 ">
+                <li className=" font-sans pd-6 text-xl text-black py-2 md:px-6 text-center  md:border-b-0hover:transform hover:scale-105 transition-transform  md:hover:text-blue-400 ">
                   <Link href="#about" onClick={() => setNavBar(!navbar)}>
                     About
                   </Link>
                 </li>
-                <li className="pd-6 text-xl text-black py-2 md:px-6 text-center md:border-b-0 hover:transform hover:scale-105 transition-transform  md:hover:text-blue-400 ">
+                <li className="pd-6 font-sans text-xl text-black py-2 md:px-6 text-center md:border-b-0 hover:transform hover:scale-105 transition-transform  md:hover:text-blue-400 ">
                   <Link href="#project" onClick={() => setNavBar(!navbar)}>
                     Project
                   </Link>
                 </li>
-                <li className="pd-6 text-xl text-black py-2 md:px-6 text-center  md:border-b-0hover:transform hover:scale-105 transition-transform  md:hover:text-blue-400 ">
+                <li className="pd-6 font-sans text-xl text-black py-2 md:px-6 text-center  md:border-b-0hover:transform hover:scale-105 transition-transform  md:hover:text-blue-400 ">
                   <Link href="#skill" onClick={() => setNavBar(!navbar)}>
                     Skills
                   </Link>
                 </li>
-                <li className="pd-6 text-xl text-black py-2 md:px-6 text-center  hover:transform hover:scale-105 transition-transform  md:hover:text-blue-400 ">
+                <li className="pd-6 font-sans text-xl text-black py-2 md:px-6 text-center  hover:transform hover:scale-105 transition-transform  md:hover:text-blue-400 ">
                   <Link href="#contact" onClick={() => setNavBar(!navbar)}>
                     Contact
                   </Link>
