@@ -10,7 +10,7 @@ const Skill = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
           <div className="bg-bg-2 rounded-lg shadow-md p-6 hover:transform hover:scale-105 hover:bg-blue-200 transition duration-200 ease-in-out">
             <h3 className="text-xl font-bold mb-4 text-orange-500 font-sans">
-              Language's
+              Languages
             </h3>
             <ul>
               <li className="mb-2 text-gray-500 font-sans">C/C++</li>
@@ -43,7 +43,7 @@ const Skill = () => {
           </div>
           <div className="bg-bg-2 rounded-lg shadow-md p-6 hover:transform hover:scale-105 hover:bg-blue-200 transition duration-200 ease-in-out">
             <h3 className="text-xl font-bold mb-4 text-orange-500 font-sans">
-              Other's
+              Others
             </h3>
             <ul>
               <li className="mb-2 text-gray-500 font-sans">Git & GitHub</li>

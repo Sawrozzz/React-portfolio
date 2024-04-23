@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -11,7 +12,7 @@ const About = () => {
                 About Me
               </h2>
               <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl text-white font-sans">
-                Hi, I'm Saroj Adhikari
+                Hi, I am Saroj Adhikari
               </p>
               <div className="uppercase tracking-wide text-2xl text-indigo-600 font-extrabold font-sans mt-5">
                 Web Developer
@@ -23,10 +24,10 @@ const About = () => {
             </div>
             <div className="md:flex md:items-center md:justify-center">
               <div className="bg-blue-400 transform hover:scale-105 transition-transform object-fit ">
-                <img
-                  src="image.png"
-                  alt="Placeholder"
-                  className="transform hover:scale-195 transition-transform"
+                <Image
+                src='image.png'
+                alt="Placeholder"
+                className="transform hover:scale-195 transition-transform"
                 />
               </div>
               <div className="mt-4 md:mt-0 md:ml-6">

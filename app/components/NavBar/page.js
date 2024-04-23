@@ -14,7 +14,7 @@ const NavBar = () => {
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               {/*logo*/}
               <Link href="/">
-                <img src="logo.png" alt="logo" height={20} width={55}></img>
+                <Image src="logo.png" alt="logo" height={20} width={55} />
               </Link>
               <div className="md:hidden">
                 <button
