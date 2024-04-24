@@ -25,8 +25,10 @@ const About = () => {
             <div className="md:flex md:items-center md:justify-center">
               <div className="bg-blue-400 transform hover:scale-105 transition-transform object-fit ">
                 <Image
-                src='image.png'
+                src='/image.png'
                 alt="Placeholder"
+                width={1100}
+                height={60}
                 className="transform hover:scale-195 transition-transform"
                 />
               </div>
