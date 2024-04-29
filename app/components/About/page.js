@@ -21,15 +21,20 @@ const About = () => {
                 A passionate web developer with an optimastic enthusium to solve
                 the given task.
               </p>
+              <button className="border">
+                <a href="Saroj's Resume.pdf" download='sarojCV.pdf' className="mt-4 mb-3 max-w-2xl text-xl lg:mx-auto text-white font-sans">
+                  Download CV
+                </a>
+              </button>
             </div>
             <div className="md:flex md:items-center md:justify-center">
               <div className="bg-blue-400 transform hover:scale-105 transition-transform object-fit ">
                 <Image
-                src='/image.png'
-                alt="Placeholder"
-                width={1100}
-                height={60}
-                className="transform hover:scale-195 transition-transform"
+                  src="/image.png"
+                  alt="Placeholder"
+                  width={1100}
+                  height={60}
+                  className="transform hover:scale-195 transition-transform"
                 />
               </div>
               <div className="mt-4 md:mt-0 md:ml-6">
