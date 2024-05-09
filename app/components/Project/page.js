@@ -34,7 +34,7 @@ const Project = () => {
   return (
     <section className="bg-zinc-900 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-extrabold text-blue-500 text-center mb-8 font-sans">
+        <h2 className="text-3xl font-extrabold text-blue-500 text-center mb-8 font-filroy">
           Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -43,12 +43,12 @@ const Project = () => {
               key={index}
               className=" rounded-lg  p-6 hover:transform hover:scale-105 hover:bg-blue-200 transition duration-200 ease-in-out"
             >
-              <h3 className="text-xl text-orange-500 font-bold mb-4 font-sans">
+              <h3 className="text-xl text-orange-500 font-bold mb-4 font-filroy">
                 {project.title}
               </h3>
               <img src={project.image} alt={project.title} className="mb-4 w-96 h-60" />{" "}
               {/* Render the image */}
-              <p className=" text-gray-500 mb-4 font-sans">
+              <p className=" text-gray-500 mb-4 font-filroy">
                 {project.description}
               </p>
               <a

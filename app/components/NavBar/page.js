@@ -8,7 +8,7 @@ const NavBar = () => {
   const [navbar, setNavBar] = useState(false);
   return (
     <>
-      <nav className="w-full bg-blue-400 fixed top-0 left-0 right-0 z-10">
+      <nav className="w-full bg-blue-600 fixed top-0 left-0 right-0 z-10">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -44,22 +44,22 @@ const NavBar = () => {
               }`}
             >
               <ul className=" h-screen md:h-auto items-center justify-center md:flex">
-                <li className=" font-sans pd-6 text-xl text-black py-2 md:px-6 text-center  md:border-b-0hover:transform hover:scale-105 transition-transform   ">
+                <li className=" font-filroy pd-6 text-xl text-white py-2 md:px-6 text-center  md:border-b-0hover:transform hover:scale-105 transition-transform   ">
                   <Link href="#about" onClick={() => setNavBar(!navbar)}>
                     About
                   </Link>
                 </li>
-                <li className="pd-6 font-sans text-xl text-black py-2 md:px-6 text-center md:border-b-0 hover:transform hover:scale-105 transition-transform   ">
+                <li className="pd-6 font-filroy text-xl text-white py-2 md:px-6 text-center md:border-b-0 hover:transform hover:scale-105 transition-transform   ">
                   <Link href="#project" onClick={() => setNavBar(!navbar)}>
                     Project
                   </Link>
                 </li>
-                <li className="pd-6 font-sans text-xl text-black py-2 md:px-6 text-center  md:border-b-0hover:transform hover:scale-105 transition-transform   ">
+                <li className="pd-6 font-poppins text-xl text-white py-2 md:px-6 text-center  md:border-b-0hover:transform hover:scale-105 transition-transform   ">
                   <Link href="#skill" onClick={() => setNavBar(!navbar)}>
                     Skills
                   </Link>
                 </li>
-                <li className="pd-6 font-sans text-xl text-black py-2 md:px-6 text-center  hover:transform hover:scale-105 transition-transform   ">
+                <li className="pd-6 font-poppins text-xl text-white py-2 md:px-6 text-center  hover:transform hover:scale-105 transition-transform   ">
                   <Link href="#contact" onClick={() => setNavBar(!navbar)}>
                     Contact
                   </Link>

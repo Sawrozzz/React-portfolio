@@ -6,8 +6,8 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    fontFamily:{
-           'sans':['Roboto', 'sans-serif'],
+    fontFamily: {
+      'filroy': ["Filroy", "sans-serif"],
     },
     extend: {
       backgroundImage: {
@@ -16,11 +16,11 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       backgroundColor: {
-         "bg-1": '#f3f4f6',
-         "bg-2":'#21252b',
+        "bg-1": "#f3f4f6",
+        "bg-2": "#21252b",
       },
       colors: {
-       "white-1": "#f3f4f6",
+        "white-1": "#f3f4f6",
       },
     },
   },
