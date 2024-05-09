@@ -2,12 +2,12 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="bg-bg-2 py-12">
+    <section className="bg-zinc-900 py-12">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-extrabold text-blue-500 text-center mb-8 font-sans">
           Contact Me
         </h2>
-        <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <div className=" bg-transparent shadow-md rounded px-8 pt-6 pb-8 mb-4">
           <form
             className="space-y-6"
             action="https://getform.io/f/pamqmnoa"
@@ -17,7 +17,7 @@ const Contact = () => {
             <div>
               <label
                 htmlFor="name"
-                className="block text-sm font-medium text-gray-700 font-sans"
+                className="bg-transparent block text-sm font-medium text-gray-700 font-sans"
               >
                 Name
               </label>
@@ -27,7 +27,7 @@ const Contact = () => {
                 type="text"
                 autoComplete="name"
                 required
-                className=" font-sans mt-1 p-3 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500"
+                className=" bg-transparent  font-sans mt-1 p-3 block w-full border border-zinc-700 rounded-md shadow-sm focus:outline-none focus:border-indigo-500"
               />
             </div>
             <div>
@@ -43,7 +43,7 @@ const Contact = () => {
                 type="email"
                 autoComplete="email"
                 required
-                className=" font-sans mt-1 p-3 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500"
+                className=" bg-transparent  text-gray-700 font-sans mt-1 p-3 block w-full border border-zinc-700 rounded-md shadow-sm focus:outline-none focus:border-indigo-500"
               />
             </div>
             <div>
@@ -58,7 +58,7 @@ const Contact = () => {
                 name="message"
                 rows="4"
                 required
-                className=" font-sans mt-1 p-3 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500"
+                className="  bg-transparent font-sans mt-1 p-3 block w-full border border-zinc-700 rounded-md shadow-sm focus:outline-none focus:border-indigo-500"
               ></textarea>
             </div>
             <div>

@@ -1,16 +1,24 @@
 import React from "react";
 import Image from "next/image";
-
 const About = () => {
   return (
     <>
       <section id="#about">
-        <div className=" bg-bg-2 py-12 mt-14">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="lg:text-center">
+        <div className=" bg-zinc-900 py-12 mt-14">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col">
+            <div className="lg:text-center flex justify-center items-center flex-col">
               <h2 className="text-base text-indigo-600 font-semibold font-sans tracking-wide uppercase">
                 About Me
               </h2>
+              <div className="w-80 h-80 bg-blue-600 overflow-hidden rounded-full">
+                <Image
+                  src="/image.png"
+                  width={1100}
+                  height={60}
+                  className="object-cover "
+                />
+              </div>
+
               <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl text-white font-sans">
                 Hi, I am Saroj Adhikari
               </p>
@@ -21,24 +29,19 @@ const About = () => {
                 A passionate web developer with an optimastic enthusium to solve
                 the given task.
               </p>
-              <button className="border">
-                <a href="Saroj's Resume.pdf" download='sarojCV.pdf' className="mt-4 mb-3 max-w-2xl text-xl lg:mx-auto text-white font-sans">
+              <button className="border ">
+                <a
+                  href="Saroj's Resume.pdf"
+                  download="sarojCV.pdf"
+                  className="mt-4 mb-3 max-w-2xl text-xl lg:mx-auto text-white font-sans"
+                >
                   Download CV
                 </a>
               </button>
             </div>
-            <div className="md:flex md:items-center md:justify-center">
-              <div className="bg-blue-400 transform hover:scale-105 transition-transform object-fit ">
-                <Image
-                  src="/image.png"
-                  alt="Placeholder"
-                  width={1100}
-                  height={60}
-                  className="transform hover:scale-195 transition-transform"
-                />
-              </div>
+            <div className="md:flex md:items-center  md:justify-center ">
               <div className="mt-4 md:mt-0 md:ml-6">
-                <p className="block mt-1 text-2xl leading-tight font-semibold text-white font-sans  ">
+                <p className=" felx text-center block mt-1 text-2xl leading-tight font-semibold text-white font-sans  ">
                   My Hobbies
                 </p>
                 <p className="mt-2 text-white font-sans">

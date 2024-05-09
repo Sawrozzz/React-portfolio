@@ -8,7 +8,7 @@ import Skill from "../Skill/page";
 const Header = () => {
   return (
     <>
-      <NavBar />
+      <NavBar  />
       <section id="about">
         <About />
       </section>
