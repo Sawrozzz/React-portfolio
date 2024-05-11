@@ -48,7 +48,11 @@ const Project = () => {
               <h3 className="text-xl text-orange-500 font-bold mb-4 font-filroy">
                 {project.title}
               </h3>
-              <img src={project.image} alt={project.title} className="mb-4 w-96 h-60" />{" "}
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full lg:w-2/2"
+              />{" "}
               {/* Render the image */}
               <p className=" text-gray-500 mb-4 font-filroy">
                 {project.description}
