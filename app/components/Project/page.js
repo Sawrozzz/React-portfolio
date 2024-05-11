@@ -17,16 +17,18 @@ const Project = () => {
       githubLink: "https://github.com/Sawrozzz/Weather-App",
     },
     {
-      title: "Tic Tac Toe",
-      description:
-        "This project contain multiple components with the valid logic to build a tic tac toe game. ",
-      githubLink: "https://github.com/Sawrozzz/TicTacToe_React",
-    },
-    {
       title: "Full Stack Sign-Up",
+      image: "auth.png",
       description:
         "This is a full stack project for a login and signup page. For this I use react and bootstrap for frontend and Node with Express for Backend and MonogDB as a Database",
       githubLink: "https://github.com/Sawrozzz/Auth_FullStack",
+    },
+    {
+      title: "Blog Website FullStack",
+      image: "blog.png",
+      description:
+        " This is secured and user friendly full stack blog website created using Node js. In this project I have implemented CURD operation uisng MongoDb and secured register and login system using hash and jwt tokens. ",
+      githubLink: "https://github.com/Sawrozzz/Blog",
     },
     // Add more projects as needed
   ];
