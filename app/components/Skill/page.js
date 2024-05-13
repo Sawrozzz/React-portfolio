@@ -1,6 +1,38 @@
 import React from "react";
 
 const Skill = () => {
+
+  const frontend = [
+    {
+      image: "React.png",
+    },
+    {
+      image: "next.png",
+    },
+    {
+      image: "boot'.png",
+    },
+    {
+      image: "tailwind.png",
+    },
+  ];
+   const languages = [
+     {
+       image: "c.png",
+     },
+     {
+       image: "c++.png",
+     },
+     {
+       image: "html.png",
+     },
+     {
+       image: "css.png",
+     },
+     {
+       image: "js.png",
+     },
+   ];
   return (
     <section className="bg-zinc-900 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -12,23 +44,29 @@ const Skill = () => {
             <h3 className="text-xl font-bold mb-4 text-orange-500 font-filroy">
               Languages
             </h3>
-            <ul>
-              <li className="mb-2 text-gray-500 font-filroy">C/C++</li>
-              <li className="mb-2 text-gray-500 font-filroy">HTML/CSS</li>
-              <li className="mb-2 text-gray-500 font-filroy">JavaScript</li>
-              <li className="mb-2 text-gray-500 font-filroy">Ruby</li>
-            </ul>
+            <div className="flex flex-wrap gap-5">
+              {languages.map((skill, index) => (
+                <img
+                  src={skill.image}
+                  alt="language-images"
+                  className=" bg-transparent w-10 lg:w-2/2 rounded-sm"
+                ></img>
+              ))}
+            </div>
           </div>
           <div className="bg-bg-2 rounded-lg shadow-md p-6 hover:transform hover:scale-105 hover:bg-blue-200 transition duration-200 ease-in-out">
             <h3 className="text-xl font-bold mb-4 text-orange-500 font-filroy">
               Frontend
             </h3>
-            <ul>
-              <li className="mb-2 text-gray-500 font-filroy">React</li>
-              <li className="mb-2 text-gray-500">Next.js</li>
-              <li className="mb-2 text-gray-500">BootStrap</li>
-              <li className="mb-2 text-gray-500">Tailwind</li>
-            </ul>
+            <div className="flex flex-wrap gap-5 ">
+              {frontend.map((skill, index) => (
+                <img
+                  src={skill.image}
+                  alt="frontend-images"
+                  className=" bg-transparent w-10 lg:w-2/2 rounded-sm"
+                ></img>
+              ))}
+            </div>
           </div>
           <div className="bg-bg-2 rounded-lg shadow-md p-6 hover:transform hover:scale-105 hover:bg-blue-200 transition duration-200 ease-in-out">
             <h3 className="text-xl font-bold mb-4 text-orange-500 font-filroy">
