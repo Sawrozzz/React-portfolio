@@ -2,35 +2,58 @@ import React from "react";
 import Image from "next/image";
 
 const Skill = () => {
+const tools = [
+  {
+    image: "/git.png",
+  },
+  {
+    image: "/github.png",
+  },
+];
+
+  const backend = [
+    {
+      image: "/node.png",
+    },
+    {
+      image: "/express.png",
+    },
+    {
+      image: "/mongo.png",
+    },
+    {
+      image: "/sql.jpeg",
+    },
+  ];
   const frontend = [
     {
-      image: "React.png",
+      image: "/React.png",
     },
     {
-      image: "next.png",
+      image: "/nextt.webp",
     },
     {
-      image: "boot'.png",
+      image: "/boot'.png",
     },
     {
-      image: "tailwind.png",
+      image: "/tailwind.png",
     },
   ];
   const languages = [
     {
-      image: "c.png",
+      image: "/c.png",
     },
     {
-      image: "c++.png",
+      image: "/c++.png",
     },
     {
-      image: "html.png",
+      image: "/html.png",
     },
     {
-      image: "css.png",
+      image: "/css.png",
     },
     {
-      image: "js.png",
+      image: "/js.png",
     },
   ];
   return (
@@ -40,7 +63,7 @@ const Skill = () => {
           My Skills
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
-          <div className="bg-bg-2 rounded-lg shadow-md p-6 hover:transform hover:scale-105 hover:bg-blue-200 transition duration-200 ease-in-out">
+          <div className=" rounded-lg shadow-md p-6 hover:transform hover:scale-105 hover:bg-blue-200 transition duration-200 ease-in-out">
             <h3 className="text-xl font-bold mb-4 text-orange-500 font-filroy">
               Languages
             </h3>
@@ -48,14 +71,16 @@ const Skill = () => {
               {languages.map((skill, index) => (
                 <Image
                   key={index}
+                  width={42}
+                  height={42}
                   src={skill.image}
                   alt="language-images"
-                  className=" bg-transparent w-10 lg:w-2/2 rounded-sm"
+                  className=" border-2 border-zinc-300 bg-transparent object-cover lg:w-2/2 rounded-full cursor-pointer"
                 />
               ))}
             </div>
           </div>
-          <div className="bg-bg-2 rounded-lg shadow-md p-6 hover:transform hover:scale-105 hover:bg-blue-200 transition duration-200 ease-in-out">
+          <div className=" rounded-lg shadow-md p-6 hover:transform hover:scale-105 hover:bg-blue-200 transition duration-200 ease-in-out">
             <h3 className="text-xl font-bold mb-4 text-orange-500 font-filroy">
               Frontend
             </h3>
@@ -64,30 +89,47 @@ const Skill = () => {
                 <Image
                   key={index}
                   src={skill.image}
+                  width={42}
+                  height={42}
                   alt="frontend-images"
-                  className=" bg-transparent w-10 lg:w-2/2 rounded-sm"
+                  className=" bg-transparent object-cover lg:w-2/2 rounded-full cursor-pointer"
                 />
               ))}
             </div>
           </div>
-          <div className="bg-bg-2 rounded-lg shadow-md p-6 hover:transform hover:scale-105 hover:bg-blue-200 transition duration-200 ease-in-out">
+          <div className=" rounded-lg shadow-md p-6 hover:transform hover:scale-105 hover:bg-blue-200 transition duration-200 ease-in-out">
             <h3 className="text-xl font-bold mb-4 text-orange-500 font-filroy">
               Backend
             </h3>
-            <ul>
-              <li className="mb-2 text-gray-500 font-filroy">Node.js</li>
-              <li className="mb-2 text-gray-500 font-filroy">Express.js</li>
-              <li className="mb-2 text-gray-500 font-filroy">MongoDB</li>
-              <li className="mb-2 text-gray-500 font-filroy">MySQLExpress</li>
-            </ul>
+            <div className="flex flex-wrap gap-5 ">
+              {backend.map((skill, index) => (
+                <Image
+                  key={index}
+                  src={skill.image}
+                  width={42}
+                  height={42}
+                  alt="frontend-images"
+                  className=" bg-transparent rounded-full object-cover lg:w-2/2 cursor-pointer "
+                />
+              ))}
+            </div>
           </div>
-          <div className="bg-bg-2 rounded-lg shadow-md p-6 hover:transform hover:scale-105 hover:bg-blue-200 transition duration-200 ease-in-out">
+          <div className="rounded-lg shadow-md p-6 hover:transform hover:scale-105 hover:bg-blue-200 transition duration-200 ease-in-out">
             <h3 className="text-xl font-bold mb-4 text-orange-500 font-filroy">
               Others
             </h3>
-            <ul>
-              <li className="mb-2 text-gray-500 font-filroy">Git & GitHub</li>
-            </ul>
+            <div className="flex flex-wrap gap-5 ">
+              {tools.map((skill, index) => (
+                <Image
+                  key={index}
+                  src={skill.image}
+                  width={42}
+                  height={42}
+                  alt="frontend-images"
+                  className=" bg-transparent  object-cover lg:w-2/2 rounded-full cursor-pointer"
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
