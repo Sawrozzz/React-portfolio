@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Skill = () => {
   const frontend = [
@@ -45,11 +46,12 @@ const Skill = () => {
             </h3>
             <div className="flex flex-wrap gap-5">
               {languages.map((skill, index) => (
-                <img
+                <Image
+                  key={index}
                   src={skill.image}
                   alt="language-images"
                   className=" bg-transparent w-10 lg:w-2/2 rounded-sm"
-                ></img>
+                />
               ))}
             </div>
           </div>
@@ -59,11 +61,12 @@ const Skill = () => {
             </h3>
             <div className="flex flex-wrap gap-5 ">
               {frontend.map((skill, index) => (
-                <img
+                <Image
+                  key={index}
                   src={skill.image}
                   alt="frontend-images"
                   className=" bg-transparent w-10 lg:w-2/2 rounded-sm"
-                ></img>
+                />
               ))}
             </div>
           </div>
