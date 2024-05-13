@@ -1,7 +1,6 @@
 import React from "react";
 
 const Skill = () => {
-
   const frontend = [
     {
       image: "React.png",
@@ -16,23 +15,23 @@ const Skill = () => {
       image: "tailwind.png",
     },
   ];
-   const languages = [
-     {
-       image: "c.png",
-     },
-     {
-       image: "c++.png",
-     },
-     {
-       image: "html.png",
-     },
-     {
-       image: "css.png",
-     },
-     {
-       image: "js.png",
-     },
-   ];
+  const languages = [
+    {
+      image: "c.png",
+    },
+    {
+      image: "c++.png",
+    },
+    {
+      image: "html.png",
+    },
+    {
+      image: "css.png",
+    },
+    {
+      image: "js.png",
+    },
+  ];
   return (
     <section className="bg-zinc-900 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
