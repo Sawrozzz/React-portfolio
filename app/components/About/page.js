@@ -29,11 +29,12 @@ const About = () => {
                 A passionate web developer with an optimastic enthusium to solve
                 the given task.
               </p>
-              <button className="border-2  rounded-md px-2  hover:border-zinc-600 bg-blue-500 h-10  ">
+              <button
+                id="rotate-border"
+              >
                 <a
                   href="Saroj's Resume.pdf"
                   download="sarojCV.pdf"
-                  className=" max-w-2xl text-xl lg:mx-auto text-white font-filroy"
                 >
                   Download CV
                 </a>

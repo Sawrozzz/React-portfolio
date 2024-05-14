@@ -6,21 +6,53 @@
 @tailwind components;
 @tailwind utilities;
 
-#mypic {
-    width: 100%; /* Full width */
-    height: auto; /* Height adjusts automatically */
-    position: relative; /* Required for absolute positioning */
-    overflow: hidden; /* Hide overflow content */
-  }
   
-  /* Default styles */
-  #mypic::before {
-    content: ''; /* Required for pseudo-elements */
-    position: absolute; /* Absolute positioning */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  @keyframes rotate-border {
+  0% {
+    transform: rotate(0deg);
+    border:2px solid aqua;
   }
-  
+  25%{
+    transform: rotate(90deg);
+    border:2px solid blueviolet;
+  }
+    50%{
+    transform: rotate(180deg);
+    border:2px solid forestgreen;
+  }
+    75%{
+    transform: rotate(270deg);
+    border:2px solid gold;
+  }
+  100% {
+    transform: rotate(360deg);
+   border:2px soild black;
+  }
+}
+
+#rotate-border {
+  position: relative;
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #1D4ED8; /* Blue color */
+  border: 2px solid transparent;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#rotate-border::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 5px solid #f7b242; 
+  border-radius: 8px;
+  animation: rotate-border 4s linear infinite;
+}
+
 
