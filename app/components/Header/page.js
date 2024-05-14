@@ -1,4 +1,3 @@
-
 import React from "react";
 import About from "../About/page";
 import Contact from "../Contact/page";
@@ -8,7 +7,7 @@ import Skill from "../Skill/page";
 const Header = () => {
   return (
     <>
-      <NavBar  />
+      <NavBar />
       <section id="about">
         <About />
       </section>

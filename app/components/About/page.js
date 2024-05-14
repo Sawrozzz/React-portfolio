@@ -18,6 +18,7 @@ const About = () => {
                   className="object-cover "
                 />
               </div>
+  
 
               <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl text-white font-filroy flex text-center">
                 Hi, I am Saroj Adhikari
@@ -29,15 +30,27 @@ const About = () => {
                 A passionate web developer with an optimastic enthusium to solve
                 the given task.
               </p>
-              <button
-                id="rotate-border"
-              >
-                <a
-                  href="Saroj's Resume.pdf"
-                  download="sarojCV.pdf"
+              <button class="animated-button">
+                <svg
+                  viewBox="0 0 24 24"
+                  class="arr-2"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  Download CV
-                </a>
+                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                </svg>
+                <span class="text">
+                  <a href="Saroj's Resume.pdf" download="sarojCV.pdf">
+                    Download CV
+                  </a>
+                </span>
+                <span class="circle"></span>
+                <svg
+                  viewBox="0 0 24 24"
+                  class="arr-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                </svg>
               </button>
             </div>
             <div className="md:flex md:items-center  md:justify-center flex justify-center text-center ">
