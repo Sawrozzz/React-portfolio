@@ -4,56 +4,71 @@ import Image from "next/image";
 const Skill = () => {
 const tools = [
   {
-    image: "/git.png",
+    image: "/git.svg",
+    name:"Git",
   },
   {
-    image: "/github.png",
+    image: "/githubb.svg",
+    name:"GitHub",
   },
 ];
 
   const backend = [
     {
-      image: "/node.png",
+      image: "/node.svg",
+      name:"NodeJS",
     },
     {
-      image: "/express.png",
+      image: "/express.svg",
+      name:"ExpressJS",
     },
     {
-      image: "/mongo.png",
+      image: "/mongo.svg",
+      name:"MOngoDB",
     },
     {
-      image: "/sql.jpeg",
+      image: "/sql.svg",
+      name:"SQLExpress",
     },
   ];
   const frontend = [
     {
-      image: "/React.png",
+      image: "/react.svg",
+      name:"ReactJS",
     },
     {
-      image: "/nextt.webp",
+      image: "/next.svg",
+      name:"NextJS",
     },
     {
-      image: "/boot'.png",
+      image: "/bootstrap.svg",
+      name:"BootStraps",
     },
     {
-      image: "/tailwind.png",
+      image: "/tailwind.svg",
+      name:"Tailwind CSS",
     },
   ];
   const languages = [
     {
       image: "/c.png",
+      name:"C",
     },
     {
-      image: "/c++.png",
+      image: "/C++.svg",
+      name:"C++",
     },
     {
-      image: "/html.png",
+      image: "/html.svg",
+      name:"HTML",
     },
     {
-      image: "/css.png",
+      image: "/css.svg",
+      name:"CSS",
     },
     {
-      image: "/js.png",
+      image: "/js.svg",
+      name:"JavaScript",
     },
   ];
   return (
@@ -63,71 +78,87 @@ const tools = [
           My Skills
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
-          <div className=" rounded-lg shadow-md p-6 hover:transform hover:scale-105 hover:bg-blue-200 transition duration-200 ease-in-out">
+          <div className=" bg-slate-500 rounded-lg shadow-md p-6 hover:transform hover:scale-105  transition duration-200 ease-in-out">
             <h3 className="text-xl font-bold mb-4 text-orange-500 font-filroy">
               Languages
             </h3>
-            <div className="flex flex-wrap gap-5">
+            <div className="flex flex-wrap gap-5 ">
               {languages.map((skill, index) => (
-                <Image
-                  key={index}
-                  width={42}
-                  height={42}
-                  src={skill.image}
-                  alt="language-images"
-                  className=" border-2 border-zinc-300 bg-transparent object-cover lg:w-2/2 rounded-full cursor-pointer"
-                />
+                <div key={index} className="relative group">
+                  <Image
+                    width={42}
+                    height={42}
+                    src={skill.image}
+                    alt={`${skill.name}-image`}
+                    className="border-2 border-zinc-300 bg-transparent object-cover lg:w-2/2 rounded-full cursor-pointer"
+                  />
+                  <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full w-max bg-black text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                    {skill.name}
+                  </span>
+                </div>
               ))}
             </div>
           </div>
-          <div className=" rounded-lg shadow-md p-6 hover:transform hover:scale-105 hover:bg-blue-200 transition duration-200 ease-in-out">
+          <div className="bg-slate-500 rounded-lg shadow-md p-6 hover:transform hover:scale-105  transition duration-200 ease-in-out">
             <h3 className="text-xl font-bold mb-4 text-orange-500 font-filroy">
               Frontend
             </h3>
-            <div className="flex flex-wrap gap-5 ">
+            <div className="flex flex-wrap gap-5">
               {frontend.map((skill, index) => (
-                <Image
-                  key={index}
-                  src={skill.image}
-                  width={42}
-                  height={42}
-                  alt="frontend-images"
-                  className=" bg-transparent object-cover lg:w-2/2 rounded-full cursor-pointer"
-                />
+                <div key={index} className="relative group">
+                  <Image
+                    width={42}
+                    height={42}
+                    src={skill.image}
+                    alt={`${skill.name}-image`}
+                    className="border-2 border-zinc-300 bg-transparent object-cover lg:w-2/2 rounded-full cursor-pointer"
+                  />
+                  <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full w-max bg-black text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                    {skill.name}
+                  </span>
+                </div>
               ))}
             </div>
           </div>
-          <div className=" rounded-lg shadow-md p-6 hover:transform hover:scale-105 hover:bg-blue-200 transition duration-200 ease-in-out">
+          <div className=" bg-slate-500 rounded-lg shadow-md p-6 hover:transform hover:scale-105  transition duration-200 ease-in-out">
             <h3 className="text-xl font-bold mb-4 text-orange-500 font-filroy">
               Backend
             </h3>
-            <div className="flex flex-wrap gap-5 ">
+            <div className="flex flex-wrap gap-5">
               {backend.map((skill, index) => (
-                <Image
-                  key={index}
-                  src={skill.image}
-                  width={42}
-                  height={42}
-                  alt="frontend-images"
-                  className=" bg-transparent rounded-full object-cover lg:w-2/2 cursor-pointer "
-                />
+                <div key={index} className="relative group">
+                  <Image
+                    width={42}
+                    height={42}
+                    src={skill.image}
+                    alt={`${skill.name}-image`}
+                    className="border-2 border-zinc-300 bg-transparent object-cover lg:w-2/2 rounded-full cursor-pointer"
+                  />
+                  <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full w-max bg-black text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                    {skill.name}
+                  </span>
+                </div>
               ))}
             </div>
           </div>
-          <div className="rounded-lg shadow-md p-6 hover:transform hover:scale-105 hover:bg-blue-200 transition duration-200 ease-in-out">
+          <div className=" bg-slate-500 rounded-lg shadow-md p-6 hover:transform hover:scale-105  transition duration-200 ease-in-out">
             <h3 className="text-xl font-bold mb-4 text-orange-500 font-filroy">
               Others
             </h3>
             <div className="flex flex-wrap gap-5 ">
               {tools.map((skill, index) => (
-                <Image
-                  key={index}
-                  src={skill.image}
-                  width={42}
-                  height={42}
-                  alt="frontend-images"
-                  className=" bg-transparent  object-cover lg:w-2/2 rounded-full cursor-pointer"
-                />
+                <div key={index} className="relative group">
+                  <Image
+                    src={skill.image}
+                    width={42}
+                    height={42}
+                    alt="frontend-images"
+                    className=" bg-transparent  object-cover lg:w-2/2  rounded-full cursor-pointer "
+                  />
+                  <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full w-max bg-black text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                    {skill.name}
+                  </span>
+                </div>
               ))}
             </div>
           </div>
