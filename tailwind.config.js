@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'filroy': ["Filroy", "sans-serif"],
+      filroy: ["Filroy", "sans-serif"],
     },
     extend: {
       backgroundImage: {
@@ -22,6 +22,16 @@ module.exports = {
       colors: {
         "white-1": "#f3f4f6",
       },
+      grayscale: {
+        50: "50%",
+        75: "75%",
+        100: "100%",
+      },
+    },
+  },
+  variants: {
+    extend: {
+      grayscale: ["hover", "focus"],
     },
   },
   plugins: [],

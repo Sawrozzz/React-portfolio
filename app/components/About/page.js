@@ -10,15 +10,14 @@ const About = () => {
               <h2 className="text-base text-indigo-600 font-semibold font-filroy tracking-wide uppercase mb-4 mt-2">
                 About Me
               </h2>
-              <div className="w-80 h-80 bg-blue-600 overflow-hidden rounded-full">
+              <div className="max-w-64 max-h-64 bg-blue-600 overflow-hidden rounded-full ">
                 <Image
                   src="/image.png"
                   width={1100}
                   height={60}
-                  className="object-cover "
+                  className="object-cover filter grayscale-100 "
                 />
               </div>
-  
 
               <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl text-white font-filroy flex text-center">
                 Hi, I am Saroj Adhikari
