@@ -10,7 +10,7 @@ const About = () => {
               <h2 className="text-base text-indigo-600 font-semibold font-filroy tracking-wide uppercase mb-4 mt-2">
                 About Me
               </h2>
-              <div className="max-w-64 max-h-64 bg-blue-600 overflow-hidden rounded-full ">
+              <div className="max-w-64 max-h-64 bg-blue-700 overflow-hidden rounded-full ">
                 <Image
                   src="/image.png"
                   width={1100}
@@ -22,7 +22,7 @@ const About = () => {
               <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl text-white font-filroy flex text-center">
                 Hi, I am Saroj Adhikari
               </p>
-              <div className="uppercase tracking-wide text-2xl text-indigo-600 font-extrabold font-filroy mt-5">
+              <div className="  uppercase flex text-center text-2xl text-indigo-600 font-extrabold font-filroy mt-5">
                 Web Developer
               </div>
               <p className="mt-4 mb-3 max-w-2xl text-xl lg:mx-auto text-white font-filroy flex text-center">
