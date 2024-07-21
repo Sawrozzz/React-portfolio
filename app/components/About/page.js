@@ -13,6 +13,7 @@ const About = () => {
               <div className="max-w-64 max-h-64 bg-blue-700 overflow-hidden rounded-full ">
                 <Image
                   src="/image.png"
+                  alt="image"
                   width={1100}
                   height={60}
                   className="object-cover filter grayscale-100 "
@@ -38,7 +39,7 @@ const About = () => {
                   <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
                 </svg>
                 <span class="text">
-                  <a href="Saroj's Resume.pdf" download="sarojCV.pdf">
+                  <a href="SarojAdhikari CV 2024.pdf" download="SarojAdhikari CV 2024.pdf">
                     Download CV
                   </a>
                 </span>
