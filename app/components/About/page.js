@@ -30,7 +30,7 @@ const About = () => {
                 A passionate web developer with an optimastic enthusium to solve
                 the given task.
               </p>
-              <button class="animated-button">
+              <button className="animated-button">
                 <svg
                   viewBox="0 0 24 24"
                   class="arr-2"
