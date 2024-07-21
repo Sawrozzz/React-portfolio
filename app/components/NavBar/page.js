@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import { useState } from "react";
-import About from "../About/page";
+
 const NavBar = () => {
   const [navbar, setNavBar] = useState(false);
   return (
@@ -13,8 +13,8 @@ const NavBar = () => {
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               {/*logo*/}
-              <Link href="/">
-                <h3 className="font-filroy font text-white">Saroj</h3>
+              <Link to="/" smooth={true} duration={500}>
+                <h3 className="font-filroy cursor-pointer text-white">Saroj</h3>
               </Link>
               <div className="md:hidden">
                 <button
@@ -29,7 +29,7 @@ const NavBar = () => {
                       width={30}
                       height={30}
                       alt="logo"
-                      className="  focus:border-none active: border-none"
+                      className=" cursor-pointer focus:border-none active: border-none"
                     />
                   )}
                 </button>
@@ -44,23 +44,44 @@ const NavBar = () => {
               }`}
             >
               <ul className=" h-screen md:h-auto items-center justify-center md:flex">
-                <li className=" font-filroy pd-6 text-xl text-white py-2 md:px-6 text-center  md:border-b-0hover:transform hover:scale-105 transition-transform   ">
-                  <Link href="#about" onClick={() => setNavBar(!navbar)}>
+                <li className=" font-filroy cursor-pointer pd-6 text-xl text-white py-2 md:px-6 text-center  md:border-b-0hover:transform hover:scale-105 transition-transform   ">
+                  <Link
+                    to="about"
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    onClick={() => setNavBar(!navbar)}
+                  >
                     About
                   </Link>
                 </li>
-                <li className="pd-6 font-filroy text-xl text-white py-2 md:px-6 text-center md:border-b-0 hover:transform hover:scale-105 transition-transform   ">
-                  <Link href="#project" onClick={() => setNavBar(!navbar)}>
+                <li className="pd-6 cursor-pointer font-filroy text-xl text-white py-2 md:px-6 text-center md:border-b-0 hover:transform hover:scale-105 transition-transform   ">
+                  <Link
+                    to="project"
+                    smooth={true}
+                    duration={500}
+                    onClick={() => setNavBar(!navbar)}
+                  >
                     Project
                   </Link>
                 </li>
-                <li className="pd-6 font-poppins text-xl text-white py-2 md:px-6 text-center  md:border-b-0hover:transform hover:scale-105 transition-transform   ">
-                  <Link href="#skill" onClick={() => setNavBar(!navbar)}>
+                <li className="pd-6 cursor-pointer font-poppins text-xl text-white py-2 md:px-6 text-center  md:border-b-0hover:transform hover:scale-105 transition-transform   ">
+                  <Link
+                    to="skill"
+                    smooth={true}
+                    duration={500}
+                    onClick={() => setNavBar(!navbar)}
+                  >
                     Skills
                   </Link>
                 </li>
-                <li className="pd-6 font-poppins text-xl text-white py-2 md:px-6 text-center  hover:transform hover:scale-105 transition-transform   ">
-                  <Link href="#contact" onClick={() => setNavBar(!navbar)}>
+                <li className="pd-6  cursor-pointer font-poppins text-xl text-white py-2 md:px-6 text-center  hover:transform hover:scale-105 transition-transform   ">
+                  <Link
+                    to="contact"
+                    smooth={true}
+                    duration={500}
+                    onClick={() => setNavBar(!navbar)}
+                  >
                     Contact
                   </Link>
                 </li>
