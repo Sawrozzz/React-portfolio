@@ -4,6 +4,26 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+/* #about{
+  background-image: url('/img.jpg');
+  background-size: cover;
+}
+#project{
+  background-image: url('/img.jpg');
+  background-size: cover;
+}
+#contact{
+  background-image: url('/img.jpg');
+  background-size: cover;
+}
+#skill{
+  background-image: url('/img.jpg');
+  background-size: cover;
+} */
+
 @keyframes rotate-border {
   0% {
     transform: rotate(0deg);
