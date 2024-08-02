@@ -3,8 +3,8 @@ import Image from "next/image";
 const About = () => {
   return (
     <>
-      <section id="#about">
-        <div className=" bg-zinc-900 py-12 mt-14">
+      <section id="#about" className="bg-zinc-900">
+        <div className=" py-12 mt-14">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col">
             <div className="lg:text-center flex justify-center items-center flex-col">
               <h2 className="text-base text-indigo-600 font-semibold font-filroy tracking-wide uppercase mb-4 mt-2">
@@ -39,7 +39,10 @@ const About = () => {
                   <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
                 </svg>
                 <span class="text">
-                  <a href="SarojAdhikari CV 2024.pdf" download="SarojAdhikari CV 2024.pdf">
+                  <a
+                    href="SarojAdhikari CV 2024.pdf"
+                    download="SarojAdhikari CV 2024.pdf"
+                  >
                     Download CV
                   </a>
                 </span>
@@ -75,3 +78,5 @@ const About = () => {
 };
 
 export default About;
+
+<div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>;
