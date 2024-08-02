@@ -6,6 +6,7 @@ import { useState } from "react";
 const Contact = () => {
     const [result, setResult] = useState("");
   const handleSubmit = async (e) => {
+   
     e.preventDefault();
     setResult("Sending....");
     const formData = new FormData(e.target);
