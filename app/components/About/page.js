@@ -7,9 +7,6 @@ const About = () => {
         <div className=" py-12 mt-14">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col">
             <div className="lg:text-center flex justify-center items-center flex-col">
-              <h2 className="text-base text-indigo-600 font-semibold font-filroy tracking-wide uppercase mb-4 mt-2">
-                About Me
-              </h2>
               <div className="max-w-64 max-h-64 bg-blue-700 overflow-hidden rounded-full ">
                 <Image
                   src="/image.png"
@@ -56,20 +53,7 @@ const About = () => {
                 </svg>
               </button>
             </div>
-            <div className="md:flex md:items-center  md:justify-center flex justify-center text-center ">
-              <div className="mt-4 md:mt-0 md:ml-6">
-                <p className=" felx text-center block mt-4 mr-5 text-2xl leading-tight font-semibold text-white font-filroy  ">
-                  My Hobbies
-                </p>
-                <p className="mt-2 text-white font-filroy">
-                  Talking about my hobbies, I am deeply passionate about
-                  football with a great inspiration in Messi I started playing
-                  football since I was a Child. Beyond football, I like watching
-                  anime. Among many animes , One Piece is my favourite anime of
-                  all time.
-                </p>
-              </div>
-            </div>
+     
           </div>
         </div>
       </section>
