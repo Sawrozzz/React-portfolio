@@ -8,13 +8,13 @@ const NavBar = () => {
   const [navbar, setNavBar] = useState(false);
   return (
     <>
-      <nav className="w-full bg-blue-400 fixed top-0 left-0 right-0 z-10">
+      <nav className="w-full bg-blue-700 fixed top-0 left-0 right-0 z-10">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               {/*logo*/}
               <Link to="/" smooth={true} duration={500}>
-                <h3 className="font-filroy cursor-pointer text-white">Saroj</h3>
+                <h3 className=" cursor-pointer text-white">Saroj</h3>
               </Link>
               <div className="md:hidden">
                 <button
@@ -44,7 +44,7 @@ const NavBar = () => {
               }`}
             >
               <ul className=" h-screen md:h-auto items-center justify-center md:flex">
-                <li className=" font-filroy cursor-pointer pd-6 text-xl text-white py-2 md:px-6 text-center  md:border-b-0hover:transform hover:scale-105 transition-transform   ">
+                <li className=" font-Ubuntu cursor-pointer pd-6 text-xl text-white py-2 md:px-6 text-center  md:border-b-0hover:transform hover:scale-105 transition-transform   ">
                   <Link
                     to="about"
                     smooth={true}
@@ -55,7 +55,7 @@ const NavBar = () => {
                     About
                   </Link>
                 </li>
-                <li className="pd-6 cursor-pointer font-filroy text-xl text-white py-2 md:px-6 text-center md:border-b-0 hover:transform hover:scale-105 transition-transform   ">
+                <li className="pd-6 cursor-pointer font-Ubuntu text-xl text-white py-2 md:px-6 text-center md:border-b-0 hover:transform hover:scale-105 transition-transform   ">
                   <Link
                     to="project"
                     smooth={true}
