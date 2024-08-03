@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,71 +8,6 @@
 
 
 
-
-/* #about{
-  background-image: url('/img.jpg');
-  background-size: cover;
-}
-#project{
-  background-image: url('/img.jpg');
-  background-size: cover;
-}
-#contact{
-  background-image: url('/img.jpg');
-  background-size: cover;
-}
-#skill{
-  background-image: url('/img.jpg');
-  background-size: cover;
-} */
-
-@keyframes rotate-border {
-  0% {
-    transform: rotate(0deg);
-    border: 2px solid aqua;
-  }
-  25% {
-    transform: rotate(90deg);
-    border: 2px solid blueviolet;
-  }
-  50% {
-    transform: rotate(180deg);
-    border: 2px solid forestgreen;
-  }
-  75% {
-    transform: rotate(270deg);
-    border: 2px solid gold;
-  }
-  100% {
-    transform: rotate(360deg);
-    border: 2px soild black;
-  }
-}
-
-#rotate-border {
-  position: relative;
-  display: inline-block;
-  padding: 8px 16px;
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
-  background-color: #1d4ed8; /* Blue color */
-  border: 2px solid transparent;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-#rotate-border::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  border: 5px solid #f7b242;
-  border-radius: 8px;
-  animation: rotate-border 4s linear infinite;
-}
 
 .animated-button {
   position: relative;
