@@ -17,13 +17,13 @@ const About = () => {
                 />
               </div>
 
-              <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl text-white font-filroy flex text-center">
+              <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl text-white font-Ubuntu flex text-center">
                 Hi, I am Saroj Adhikari
               </p>
-              <div className="  uppercase flex text-center text-2xl text-indigo-600 font-extrabold font-filroy mt-5">
+              <div className="  uppercase flex text-center text-2xl text-indigo-600 font-extrabold font-Ubuntu mt-5">
                 Web Developer
               </div>
-              <p className="mt-4 mb-3 max-w-2xl text-xl lg:mx-auto text-white font-filroy flex text-center">
+              <p className="mt-4 mb-3 max-w-2xl text-xl lg:mx-auto text-white font-Ubuntu flex text-center">
                 A passionate web developer with an optimastic enthusium to solve
                 the given task.
               </p>
@@ -53,7 +53,6 @@ const About = () => {
                 </svg>
               </button>
             </div>
-     
           </div>
         </div>
       </section>
@@ -63,4 +62,3 @@ const About = () => {
 
 export default About;
 
-<div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>;
