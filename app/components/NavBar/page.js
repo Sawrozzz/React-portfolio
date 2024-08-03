@@ -65,7 +65,7 @@ const NavBar = () => {
                     Project
                   </Link>
                 </li>
-                <li className="pd-6 cursor-pointer font-poppins text-xl text-white py-2 md:px-6 text-center  md:border-b-0hover:transform hover:scale-105 transition-transform   ">
+                <li className="pd-6 cursor-pointer font-Ubuntu text-xl text-white py-2 md:px-6 text-center  md:border-b-0hover:transform hover:scale-105 transition-transform   ">
                   <Link
                     to="skill"
                     smooth={true}
@@ -75,7 +75,7 @@ const NavBar = () => {
                     Skills
                   </Link>
                 </li>
-                <li className="pd-6  cursor-pointer font-poppins text-xl text-white py-2 md:px-6 text-center  hover:transform hover:scale-105 transition-transform   ">
+                <li className="pd-6  cursor-pointer font-Ubuntu text-xl text-white py-2 md:px-6 text-center  hover:transform hover:scale-105 transition-transform   ">
                   <Link
                     to="contact"
                     smooth={true}
