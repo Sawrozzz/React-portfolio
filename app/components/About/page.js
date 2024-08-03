@@ -17,8 +17,8 @@ const About = () => {
                 />
               </div>
 
-              <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl text-white font-Ubuntu flex text-center">
-                Hi, I am Saroj Adhikari
+              <p className="mt-2 text-3xl  leading-8 font-thin tracking-tight sm:text-4xl text-white font-Ubuntu flex text-center">
+                Hi, I am <span className="font-extrabold pl-2"> Saroj Adhikari</span>
               </p>
               <div className="  uppercase flex text-center text-2xl text-indigo-600 font-extrabold font-Ubuntu mt-5">
                 Web Developer
