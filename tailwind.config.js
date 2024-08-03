@@ -1,3 +1,5 @@
+const { Lato, Ubuntu } = require('next/font/google');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: "jit",
@@ -9,6 +11,8 @@ module.exports = {
   theme: {
     fontFamily: {
       filroy: ["Filroy", "sans-serif"],
+      Lato: ["Lato", "sans-serif"],
+      Ubuntu: ["Ubuntu", "sans-serif"],
     },
     extend: {
       backgroundImage: {
