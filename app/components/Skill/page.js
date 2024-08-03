@@ -74,12 +74,12 @@ const tools = [
   return (
     <section id="skill" className="bg-zinc-900 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-extrabold text-blue-400 text-center mb-8 font-filroy">
+        <h2 className="text-3xl font-extrabold text-blue-600 text-center mb-8 font-Ubuntu">
           My Skills
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
           <div className=" bg-slate-500 rounded-lg shadow-md p-6 hover:transform hover:scale-105  transition duration-200 ease-in-out">
-            <h3 className="text-xl font-bold mb-4 text-orange-500 font-filroy">
+            <h3 className="text-xl font-bold mb-4 text-blue-500 font-Ubuntu">
               Languages
             </h3>
             <div className="flex flex-wrap gap-5 ">
@@ -92,7 +92,7 @@ const tools = [
                     alt={`${skill.name}-image`}
                     className="border-2 border-zinc-300 bg-transparent object-cover lg:w-2/2 rounded-full cursor-pointer"
                   />
-                  <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full w-max bg-black text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full w-max bg-black text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity font-Ubuntu">
                     {skill.name}
                   </span>
                 </div>
@@ -100,7 +100,7 @@ const tools = [
             </div>
           </div>
           <div className="bg-slate-500 rounded-lg shadow-md p-6 hover:transform hover:scale-105  transition duration-200 ease-in-out">
-            <h3 className="text-xl font-bold mb-4 text-orange-500 font-filroy">
+            <h3 className="text-xl font-bold mb-4 text-orange-500 font-Ubuntu">
               Frontend
             </h3>
             <div className="flex flex-wrap gap-5">
@@ -121,7 +121,7 @@ const tools = [
             </div>
           </div>
           <div className=" bg-slate-500 rounded-lg shadow-md p-6 hover:transform hover:scale-105  transition duration-200 ease-in-out">
-            <h3 className="text-xl font-bold mb-4 text-orange-500 font-filroy">
+            <h3 className="text-xl font-bold mb-4 text-orange-500 font-Ubuntu">
               Backend
             </h3>
             <div className="flex flex-wrap gap-5">
@@ -142,7 +142,7 @@ const tools = [
             </div>
           </div>
           <div className=" bg-slate-500 rounded-lg shadow-md p-6 hover:transform hover:scale-105  transition duration-200 ease-in-out">
-            <h3 className="text-xl font-bold mb-4 text-orange-500 font-filroy">
+            <h3 className="text-xl font-bold mb-4 text-orange-500 font-Ubuntu">
               Others
             </h3>
             <div className="flex flex-wrap gap-5 ">
