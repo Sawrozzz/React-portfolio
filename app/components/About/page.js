@@ -3,11 +3,11 @@ import Image from "next/image";
 const About = () => {
   return (
     <>
-      <section id="#about" className="bg-zinc-900">
+      <section id="#about" className="bg-white">
         <div className=" py-12 mt-14">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col">
             <div className="lg:text-center flex justify-center items-center flex-col">
-              <div className="max-w-64 max-h-64 bg-blue-700 overflow-hidden rounded-full ">
+              <div className="max-w-64 max-h-64 bg-black overflow-hidden rounded-full ">
                 <Image
                   src="/image.png"
                   alt="image"
@@ -17,13 +17,14 @@ const About = () => {
                 />
               </div>
 
-              <p className="mt-2 text-3xl  leading-8 font-thin tracking-tight sm:text-4xl text-white font-Ubuntu flex text-center">
-                Hi, I am <span className="font-extrabold pl-2"> Saroj Adhikari</span>
+              <p className="mt-2 text-sm sm:text-2xl leading-8 font-thin tracking-tight  bg-bg-2 font-Ubuntu flex text-center">
+                Hi, I am{" "}
+                <span className="font-extrabold pl-2 sm:text-3xl"> Saroj Adhikari</span>
               </p>
-              <div className="  uppercase flex text-center text-2xl text-indigo-600 font-extrabold font-Ubuntu mt-5">
+              <div className="  uppercase flex text-center text-2xl text-black font-extrabold font-Ubuntu mt-5">
                 Web Developer
               </div>
-              <p className="mt-4 mb-3 max-w-2xl text-xl lg:mx-auto text-white font-Ubuntu flex text-center">
+              <p className="mt-4 mb-3 max-w-2xl text-xl lg:mx-auto text-black font-Ubuntu flex text-center">
                 A passionate web developer with an optimastic enthusium to solve
                 the given task.
               </p>
@@ -61,4 +62,3 @@ const About = () => {
 };
 
 export default About;
-
