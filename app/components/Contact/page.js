@@ -2,11 +2,11 @@
 
 import React from "react";
 import { useState } from "react";
+import { MdLocalPhone, MdEmail, MdLocationPin } from "react-icons/md";
 
 const Contact = () => {
-    const [result, setResult] = useState("");
+  const [result, setResult] = useState("");
   const handleSubmit = async (e) => {
-   
     e.preventDefault();
     setResult("Sending....");
     const formData = new FormData(e.target);
@@ -29,12 +29,31 @@ const Contact = () => {
     }
   };
   return (
-    <section id="contact" className=" bg-zinc-900 py-12">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-extrabold text-blue-500 text-center mb-8 font-Ubuntu">
+    <section
+      id="contact"
+      className="flex flex-col sm:flex-row justify-around gap-2 py-12"
+    >
+      <div className="flex flex-col justify-center items-center gap-6 pl-10">
+        <div className="flex items-center bg-bg-2">
+          <MdLocalPhone />
+          <span className="text-sm sm:text-base ml-2">9840499100</span>
+        </div>
+        <div className="flex items-center bg-bg-2">
+          <MdLocationPin />
+          <span className="text-sm sm:text-base ml-2">Kathmandu, Nepal</span>
+        </div>
+        <div className="flex items-center bg-bg-2">
+          <MdEmail />
+          <span className="text-sm sm:text-base ml-2">
+            adhikaribroo281@gmail.com
+          </span>
+        </div>
+      </div>
+      <div className="w-full sm:w-1/2  sm:px-6 lg:px-8 mx-auto">
+        <h2 className="text-3xl sm:text-3xl font-extrabold text-black mt-4  font-Ubuntu">
           Contact Me
         </h2>
-        <div className=" bg-transparent shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <div className="bg-transparent shadow-md rounded px-4  pb-8 ">
           <form className="space-y-6" onSubmit={handleSubmit}>
             <input
               type="hidden"
@@ -44,7 +63,7 @@ const Contact = () => {
             <div>
               <label
                 htmlFor="name"
-                className="bg-transparent block text-sm font-medium text-gray-100 font-Ubuntu"
+                className="bg-transparent block text-sm font-medium text-gray-600 font-Ubuntu"
               >
                 Name
               </label>
@@ -54,13 +73,13 @@ const Contact = () => {
                 type="text"
                 autoComplete="name"
                 required
-                className=" bg-transparent  text-gray-100 font-Ubuntu mt-1 p-3 block w-full border border-zinc-700 rounded-md shadow-sm focus:outline-none focus:border-indigo-500"
+                className="bg-transparent text-gray-600 font-Ubuntu mt-1 p-3 block w-full border  rounded-md shadow-sm focus:outline-none focus:border-indigo-500"
               />
             </div>
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm font-medium text-gray-100 font-Ubuntu"
+                className="block text-sm font-medium text-gray-600 font-Ubuntu"
               >
                 Email
               </label>
@@ -70,13 +89,13 @@ const Contact = () => {
                 type="email"
                 autoComplete="email"
                 required
-                className=" bg-transparent  text-gray-100 font-Ubuntu mt-1 p-3 block w-full border border-zinc-700 rounded-md shadow-sm focus:outline-none focus:border-indigo-500"
+                className="bg-transparent text-gray-600 font-Ubuntu mt-1 p-3 block w-full border rounded-md shadow-sm focus:outline-none focus:border-indigo-500"
               />
             </div>
             <div>
               <label
                 htmlFor="message"
-                className="block text-sm font-medium text-gray-100 font-Ubuntu"
+                className="block text-sm font-medium text-gray-600 font-Ubuntu"
               >
                 Message
               </label>
@@ -85,7 +104,7 @@ const Contact = () => {
                 name="message"
                 rows="4"
                 required
-                className="  bg-gray-500 font-Ubuntu mt-1 p-3 block w-full border border-zinc-700 rounded-md shadow-sm focus:outline-none focus:border-indigo-500"
+                className=" font-Ubuntu mt-1 p-3 block w-full border  rounded-md shadow-sm focus:outline-none focus:border-indigo-500"
               ></textarea>
             </div>
             <div>
@@ -98,8 +117,10 @@ const Contact = () => {
             </div>
           </form>
         </div>
+        <span className="text-xl sm:text-2xl text-green-500 text-center font-Ubuntu">
+          {result}
+        </span>
       </div>
-      <span className="text-2xl text-green-500 text-center font-Ubuntu">{result}</span>
     </section>
   );
 };
