@@ -36,11 +36,11 @@ const Contact = () => {
       <div className="flex flex-col justify-center items-center gap-6 pl-10">
         <div className="flex items-center bg-bg-2">
           <MdLocalPhone />
-          <span className="text-sm sm:text-base ml-2">9840499100</span>
+          <span className="text-sm sm:text-base ml-2">+977 9840499100</span>
         </div>
         <div className="flex items-center bg-bg-2">
           <MdLocationPin />
-          <span className="text-sm sm:text-base ml-2">Kathmandu, Nepal</span>
+          <span className="text-sm sm:text-base ml-2">Samakhushi Kathmandu, Nepal</span>
         </div>
         <div className="flex items-center bg-bg-2">
           <MdEmail />
