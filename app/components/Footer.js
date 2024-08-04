@@ -2,15 +2,18 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="  border-t-1  py-4 bg-blue-800">
+    <footer className="py-4 bg-black">
       <div className="container mx-auto flex items-center justify-center">
-        <p className="text-center font-sans">
+        <p className="text-center font-Ubuntu text-black bg-bg-2">
           © 2024 Saroj Adhikari. All rights reserved.
         </p>
       </div>
       <ul class="wrapper">
         <li class="icon facebook">
-          <a href="https://www.facebook.com/profile.php?id=100027902503817">
+          <a
+            href="https://www.facebook.com/profile.php?id=100027902503817"
+            target="_blank"
+          >
             <span class="tooltip">Facebook</span>
             <svg
               viewBox="0 0 320 512"
@@ -23,7 +26,7 @@ const Footer = () => {
           </a>
         </li>
         <li class="icon twitter">
-          <a href="https://twitter.com/IamSaroj123">
+          <a href="https://twitter.com/IamSaroj123" target="_blank">
             <span class="tooltip">Twitter</span>
             <svg
               height="1.8em"
@@ -37,7 +40,7 @@ const Footer = () => {
           </a>
         </li>
         <li class="icon instagram">
-          <a href="https://www.instagram.com/saw_rose001/">
+          <a href="https://www.instagram.com/saw_rose001/" target="_blank">
             <span class="tooltip">Instagram</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
