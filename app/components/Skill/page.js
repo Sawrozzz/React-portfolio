@@ -72,14 +72,14 @@ const tools = [
     },
   ];
   return (
-    <section id="skill" className="bg-zinc-900 py-12">
+    <section id="skill" className=" py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-extrabold text-blue-600 text-center mb-8 font-Ubuntu">
+        <h2 className="text-4xl font-extrabold text-black  px-4 mb-8 font-Lato">
           My Skills
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
-          <div className=" bg-slate-500 rounded-lg shadow-md p-6 hover:transform hover:scale-105  transition duration-200 ease-in-out">
-            <h3 className="text-xl font-bold mb-4 text-blue-500 font-Ubuntu">
+          <div className=" rounded-lg shadow-md px-4 hover:transform hover:scale-105  transition duration-200 ease-in-out">
+            <h3 className="text-xl font-bold mb-4 text-black bg-bg-2 font-Ubuntu">
               Languages
             </h3>
             <div className="flex flex-wrap gap-5 ">
@@ -99,8 +99,8 @@ const tools = [
               ))}
             </div>
           </div>
-          <div className="bg-slate-500 rounded-lg shadow-md p-6 hover:transform hover:scale-105  transition duration-200 ease-in-out">
-            <h3 className="text-xl font-bold mb-4 text-orange-500 font-Ubuntu">
+          <div className=" rounded-lg shadow-md px-4 hover:transform hover:scale-105  transition duration-200 ease-in-out">
+            <h3 className="text-xl font-bold mb-4 text-black bg-bg-2 font-Ubuntu">
               Frontend
             </h3>
             <div className="flex flex-wrap gap-5">
@@ -120,8 +120,8 @@ const tools = [
               ))}
             </div>
           </div>
-          <div className=" bg-slate-500 rounded-lg shadow-md p-6 hover:transform hover:scale-105  transition duration-200 ease-in-out">
-            <h3 className="text-xl font-bold mb-4 text-orange-500 font-Ubuntu">
+          <div className="  rounded-lg shadow-md px-4 hover:transform hover:scale-105  transition duration-200 ease-in-out">
+            <h3 className="text-xl font-bold mb-4 text-black font-Ubuntu bg-bg-2">
               Backend
             </h3>
             <div className="flex flex-wrap gap-5">
@@ -141,8 +141,8 @@ const tools = [
               ))}
             </div>
           </div>
-          <div className=" bg-slate-500 rounded-lg shadow-md p-6 hover:transform hover:scale-105  transition duration-200 ease-in-out">
-            <h3 className="text-xl font-bold mb-4 text-orange-500 font-Ubuntu">
+          <div className="  rounded-lg shadow-md px-4 hover:transform hover:scale-105  transition duration-200 ease-in-out">
+            <h3 className="text-xl font-bold mb-4 text-black bg-bg-2 font-Ubuntu">
               Others
             </h3>
             <div className="flex flex-wrap gap-5 ">
