@@ -8,20 +8,18 @@ const Header = () => {
   return (
     <>
       <NavBar />
-      <section id="about">
+      <div id="about">
         <About />
-      </section>
-      <section id="project">
+      </div>
+      <div id="project">
         <Project />
-      </section>
-
-      <section id="skill">
+      </div>
+      <div id="skill">
         <Skill />
-      </section>
-
-      <section id="contact">
+      </div>
+      <div id="contact">
         <Contact />
-      </section>
+      </div>
     </>
   );
 };
