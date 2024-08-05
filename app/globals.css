@@ -91,7 +91,7 @@
 
 .animated-button:active {
   scale: 0.95;
-  box-shadow: 0 0 0 4px blue;
+  box-shadow: 0 0 0 4px #30E612;
 }
 
 .animated-button:hover .circle {
