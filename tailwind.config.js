@@ -27,6 +27,7 @@ module.exports = {
       },
       colors: {
         "white-1": "#f3f4f6",
+        "green-1": "#30E612",
       },
       grayscale: {
         50: "50%",
