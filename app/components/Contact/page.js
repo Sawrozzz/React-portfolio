@@ -40,7 +40,9 @@ const Contact = () => {
         </div>
         <div className="flex items-center bg-bg-2">
           <MdLocationPin />
-          <span className="text-sm sm:text-base ml-2">Samakhushi Kathmandu, Nepal</span>
+          <span className="text-sm sm:text-base ml-2">
+            Samakhushi Kathmandu, Nepal
+          </span>
         </div>
         <div className="flex items-center bg-bg-2">
           <MdEmail />
@@ -50,10 +52,10 @@ const Contact = () => {
         </div>
       </div>
       <div className="w-full sm:w-1/2  sm:px-6 lg:px-8 mx-auto">
-        <h2 className="text-3xl sm:text-3xl font-extrabold text-black mt-4  font-Ubuntu">
+        <h2 className="text-2xl md:text-4xl px-4 font-extrabold text-black mt-4 font-Ubuntu">
           Contact Me
         </h2>
-        <div className="bg-transparent shadow-md rounded px-4  pb-8 ">
+        <div className="bg-transparent shadow-sm rounded px-4  pb-8 ">
           <form className="space-y-6" onSubmit={handleSubmit}>
             <input
               type="hidden"
@@ -73,7 +75,7 @@ const Contact = () => {
                 type="text"
                 autoComplete="name"
                 required
-                className="bg-transparent text-gray-600 font-Ubuntu mt-1 p-3 block w-full border  rounded-md shadow-sm focus:outline-none focus:border-indigo-500"
+                className="bg-transparent text-gray-600 font-Ubuntu caret-green-1 mt-1 p-3 block w-full border  rounded-md shadow-sm focus:outline-none focus:border-green-1"
               />
             </div>
             <div>
@@ -89,7 +91,7 @@ const Contact = () => {
                 type="email"
                 autoComplete="email"
                 required
-                className="bg-transparent text-gray-600 font-Ubuntu mt-1 p-3 block w-full border rounded-md shadow-sm focus:outline-none focus:border-indigo-500"
+                className="bg-transparent text-gray-600 font-Ubuntu caret-green-1 mt-1 p-3 block w-full border rounded-md shadow-sm focus:outline-none focus:border-green-1"
               />
             </div>
             <div>
@@ -104,13 +106,13 @@ const Contact = () => {
                 name="message"
                 rows="4"
                 required
-                className=" font-Ubuntu mt-1 p-3 block w-full border  rounded-md shadow-sm focus:outline-none focus:border-indigo-500"
+                className=" font-Ubuntu mt-1 p-3 block w-full border caret-green-1  rounded-md shadow-sm focus:outline-none focus:border-green-1"
               ></textarea>
             </div>
             <div>
               <button
                 type="submit"
-                className="max-w-36 font-Ubuntu flex justify-center py-3 px-4  border-transparent rounded-md shadow-sm text-white bg-black hover:bg-bg-2 focus:outline-none  focus:ring "
+                className="max-w-36 font-Ubuntu flex justify-center py-3 px-4  border-transparent rounded-md shadow-sm text-white bg-black hover:bg-bg-2 hover:text-black focus:outline-none  focus:ring "
               >
                 Submit
               </button>
