@@ -31,20 +31,20 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col sm:flex-row justify-around gap-2 py-12"
+      className="flex flex-col sm:flex-row justify-around gap-2 py-12 bg-stone-300"
     >
       <div className="flex flex-col justify-center items-center gap-6 pl-10">
-        <div className="flex items-center bg-bg-2">
+        <div className="flex items-center ">
           <MdLocalPhone />
           <span className="text-sm sm:text-base ml-2">+977 9840499100</span>
         </div>
-        <div className="flex items-center bg-bg-2">
+        <div className="flex items-center ">
           <MdLocationPin />
           <span className="text-sm sm:text-base ml-2">
             Samakhushi Kathmandu, Nepal
           </span>
         </div>
-        <div className="flex items-center bg-bg-2">
+        <div className="flex items-center ">
           <MdEmail />
           <span className="text-sm sm:text-base ml-2">
             adhikaribroo281@gmail.com
@@ -106,7 +106,7 @@ const Contact = () => {
                 name="message"
                 rows="4"
                 required
-                className=" font-Ubuntu mt-1 p-3 block w-full border caret-green-1  rounded-md shadow-sm focus:outline-none focus:border-green-1"
+                className=" bg-transparent font-Ubuntu mt-1 p-3 block w-full border caret-green-1  rounded-md shadow-sm focus:outline-none focus:border-green-1"
               ></textarea>
             </div>
             <div>

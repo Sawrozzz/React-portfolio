@@ -3,7 +3,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <>
-      <section id="#about" className="bg-white">
+      <section id="#about" className=" bg-stone-300">
         <div className=" py-12 mt-14">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col">
             <div className="lg:text-center flex justify-center items-center flex-col">
@@ -17,7 +17,7 @@ const About = () => {
                 />
               </div>
 
-              <p className="mt-2 text-sm sm:text-2xl leading-8 font-thin tracking-tight  bg-bg-2 font-Ubuntu flex text-center">
+              <p className="mt-2 text-sm sm:text-2xl leading-8 font-thin tracking-tight   font-Ubuntu flex text-center">
                 Hi, I am{" "}
                 <span className="font-extrabold pl-2 sm:text-3xl"> Saroj Adhikari</span>
               </p>
