@@ -16,7 +16,7 @@ const Project = () => {
       title: "Blog Website FullStack",
       image: "/blog.png",
       description:
-        " This is secured and user friendly full stack blog website created using Node js. In this project I have implemented CRUD operation uisng MongoDb and secured register and login system using hash and jwt tokens. ",
+        " This is secured and user friendly full stack blog website created using Node js. In this project I have implemented CRUD operation using MongoDb and secured register and login system using hash and jwt tokens. ",
       githubLink: "https://github.com/Sawrozzz/Blog",
       live: "https://blogapp-8ffe.onrender.com/",
     },
