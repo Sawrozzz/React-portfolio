@@ -13,13 +13,6 @@ const Project = () => {
       live: "https://weather-app-xi-liard.vercel.app/",
     },
     {
-      title: "Full Stack Sign-Up",
-      image: "/auth.png",
-      description:
-        "This is a full stack project for a login and signup page. For this I use react and bootstrap for frontend and Node with Express for Backend and MonogDB as a Database",
-      githubLink: "https://github.com/Sawrozzz/Auth_FullStack",
-    },
-    {
       title: "Blog Website FullStack",
       image: "/blog.png",
       description:
@@ -48,7 +41,7 @@ const Project = () => {
   return (
     <section id="project" className="pt-8 bg-stone-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-extrabold text-black  px-4 mb-8 font-Lato">
+        <h2 className="text-4xl  text-center font-extrabold text-black  px-4 mb-8 font-Lato ">
           Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
