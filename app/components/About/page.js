@@ -7,12 +7,12 @@ const About = () => {
         <div className=" py-12 mt-14">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col">
             <div className="lg:text-center flex justify-center items-center flex-col">
-              <div className="max-w-64 max-h-64 bg-black overflow-hidden rounded-full ">
+              <div className="max-w-64 max-h-64 bg-zinc-800 overflow-hidden rounded-full ">
                 <Image
                   src="/image.png"
                   alt="image"
-                  width={1100}
-                  height={60}
+                  width={500}
+                  height={300}
                   className="object-cover filter grayscale-100 "
                 />
               </div>
