@@ -39,9 +39,9 @@ const Project = () => {
   ];
 
   return (
-    <section id="project" className="pt-8 bg-stone-300">
+    <section id="project" className="pt-8 bg-stone-300 dark:bg-zinc-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl  text-center font-extrabold text-black  px-4 mb-8 font-Lato ">
+        <h2 className="text-4xl  text-center font-extrabold text-black dark:text-white  px-4 mb-8 font-Lato ">
           Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -50,7 +50,7 @@ const Project = () => {
               key={index}
               className=" rounded-full grid grid-row-4  p-6 hover:transform hover:scale-105 hover: transition duration-200 ease-in-out"
             >
-              <h3 className="text-xl text-black  font-bold mb-4 font-Ubuntu">
+              <h3 className="text-xl text-black dark:text-white  font-bold mb-4 font-Ubuntu">
                 {project.title}
               </h3>
               <Image
@@ -60,7 +60,7 @@ const Project = () => {
                 alt={project.title}
                 className="lg:w-3/2 h-48 object-cover rounded"
               />
-              <p className=" text-gray-600 mt-2 mb-4 font-Ubuntu">
+              <p className=" text-gray-600 dark:text-white mt-2 mb-4 font-Ubuntu">
                 {project.description}
               </p>
               <div className="flex justify-between ">
@@ -68,14 +68,14 @@ const Project = () => {
                   href={project.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className=" bg-transparent text-white font-Ubuntu py-2 px-4 rounded "
+                  className=" bg-transparent text-white  font-Ubuntu py-2 px-4 rounded "
                 >
-                  <GitHubIcon size={30} />
+                  <GitHubIcon className="dark:bg-white rounded-full" size={30} />
                 </a>
                 <a
                   href={project.live}
                   target="_blank"
-                  className=" text-black font-Ubuntu  text-center pt-2 rounded "
+                  className=" text-black dark:text-white font-Ubuntu  text-center pt-2 rounded "
                 >
                   <PiArrowSquareDownRightLight size={30} />
                 </a>
