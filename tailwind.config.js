@@ -1,8 +1,9 @@
-const { Lato, Ubuntu } = require('next/font/google');
+const { Lato, Ubuntu } = require("next/font/google");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: "jit",
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -17,7 +18,6 @@ module.exports = {
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
@@ -33,6 +33,16 @@ module.exports = {
         50: "50%",
         75: "75%",
         100: "100%",
+      },
+      dark: {
+        backgroundColor: {
+          "bg-1": "#1a202c", // Dark mode background color
+          "bg-2": "#2d3748", // Dark mode secondary background color
+        },
+        colors: {
+          "white-1": "#718096", // Dark mode text color
+          "green-1": "#38a169", // Dark mode accent color
+        },
       },
     },
   },
