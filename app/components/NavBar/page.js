@@ -104,6 +104,7 @@ const NavBar = () => {
         {
           !darkMode ? (
             <MdOutlineDarkMode
+            className="cursor-pointer"
             size={30}
             onClick={()=>setDarkMode(!darkMode)}
             />
@@ -111,7 +112,7 @@ const NavBar = () => {
           (
             <MdLightMode
             size={30}
-            className="  dark:text-white "
+            className="  dark:text-white cursor-pointer "
             onClick={(()=>setDarkMode(!darkMode))}
             />
           )
