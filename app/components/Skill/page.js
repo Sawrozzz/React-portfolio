@@ -17,29 +17,95 @@ import {
   MicrosoftSQLServerIcon,
 } from "developer-icons";
 
-const Skill = () => {
+import OrbitingCircles from "@/components/ui/orbiting-circles";
+
+const Skills = ()=> {
   return (
-    <section id="skill" className="py-12 bg-stone-300 dark:bg-zinc-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl text-center font-extrabold text-black dark:text-white px-4 mb-8 font-Lato">
-          My Skills
-        </h2>
-        <div className="flex gap-3 items-center justify-around flex-wrap ">
-          <MongoDBIcon className="cursor-pointer" />
-          <NodeJsIcon className="cursor-pointer" />
-          <ExpressJsLightIcon className="cursor-pointer dark:bg-white rounded-full" />
-          <MySQLIcon className="cursor-pointer " />
-          <ReactIcon className="cursor-pointer" />
-          <NextJsIcon className="cursor-pointer  dark:bg-white rounded-full " />
-          <Bootstrap5Icon className="cursor-pointer" />
-          <TailwindCSSIcon className="cursor-pointer" />
-          <CPlusPlusIcon className="cursor-pointer" />
-          <GitIcon className="cursor-pointer" />
-          <GitHubIcon className="cursor-pointer dark:bg-white rounded-full" />
-          <CSS3Icon className="cursor-pointer" />
-        </div>
-      </div>
-    </section>
+    <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-stone-300 dark:bg-zinc-900 md:shadow-xl">
+      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-black">
+        Skills
+      </span>
+
+      {/* Inner Circles */}
+      <OrbitingCircles
+        className="size-[30px] border-none bg-transparent"
+        duration={20}
+        delay={20}
+        radius={80}
+      >
+        <NextJsIcon />
+      </OrbitingCircles>
+      <OrbitingCircles
+        className="size-[30px] border-none bg-transparent"
+        duration={20}
+        delay={15}
+        radius={40}
+        reverse
+      >
+        <MongoDBIcon />
+      </OrbitingCircles>
+      <OrbitingCircles
+        className="size-[30px] border-none bg-transparent"
+        duration={20}
+        delay={10}
+        radius={80}
+      ></OrbitingCircles>
+      <OrbitingCircles
+        className="size-[30px] border-none bg-transparent"
+        duration={20}
+        delay={10}
+        radius={80}
+      >
+        <NodeJsIcon />
+      </OrbitingCircles>
+      <OrbitingCircles
+        className="size-[30px] border-none bg-transparent"
+        duration={20}
+        delay={10}
+        radius={120}
+        reverse
+      >
+        <TailwindCSSIcon />
+      </OrbitingCircles>
+      <OrbitingCircles
+        className="size-[30px] border-none bg-transparent"
+        duration={20}
+        delay={30}
+        radius={120}
+      >
+        <Bootstrap5Icon />
+      </OrbitingCircles>
+
+      {/* Outer Circles (reverse) */}
+      <OrbitingCircles
+        className="size-[50px] border-none bg-transparent"
+        radius={190}
+        duration={20}
+        reverse
+      >
+        <GitHubIcon />
+      </OrbitingCircles>
+      <OrbitingCircles
+        className="size-[50px] border-none bg-transparent"
+        radius={190}
+        duration={20}
+        delay={20}
+        reverse
+      >
+        <GitIcon />
+      </OrbitingCircles>
+      <OrbitingCircles
+        className="size-[50px] border-none bg-transparent"
+        radius={190}
+        duration={20}
+        delay={30}
+      >
+        <ExpressJsLightIcon />
+      </OrbitingCircles>
+    </div>
   );
-};
-export default Skill;
+}
+
+
+
+export default Skills;
