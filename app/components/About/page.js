@@ -42,8 +42,8 @@ const About = () => {
                 <span class="text">
                   <a
                     className="dark:text-white"
-                    href="SarojAdhikari CV 2024.pdf"
-                    download="SarojAdhikari CV 2024.pdf"
+                    href="Saroj Adhikari CV(update).pdf"
+                    download="Saroj Adhikari CV(update).pdf"
                   >
                     Download CV
                   </a>

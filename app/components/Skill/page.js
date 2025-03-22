@@ -15,6 +15,7 @@ import {
   MySQLIcon,
   MongoDBIcon,
   MicrosoftSQLServerIcon,
+  NestJSIcon,
 } from "developer-icons";
 
 const Skill = () => {
@@ -25,18 +26,19 @@ const Skill = () => {
           My Skills
         </h2>
         <div className="flex gap-3 items-center justify-around flex-wrap ">
-          <MongoDBIcon className="cursor-pointer" />
-          <NodeJsIcon className="cursor-pointer" />
-          <ExpressJsLightIcon className="cursor-pointer dark:bg-white rounded-full" />
-          <MySQLIcon className="cursor-pointer " />
-          <ReactIcon className="cursor-pointer" />
-          <NextJsIcon className="cursor-pointer  dark:bg-white rounded-full " />
-          <Bootstrap5Icon className="cursor-pointer" />
-          <TailwindCSSIcon className="cursor-pointer" />
-          <CPlusPlusIcon className="cursor-pointer" />
-          <GitIcon className="cursor-pointer" />
-          <GitHubIcon className="cursor-pointer dark:bg-white rounded-full" />
-          <CSS3Icon className="cursor-pointer" />
+          <MongoDBIcon className="cursor-pointer dark:bg-white border border-green-600 rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
+          <NodeJsIcon className="cursor-pointer dark:bg-white border border-green-600 rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
+          <ExpressJsLightIcon className="cursor-pointer dark:bg-white border border-black rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
+          <NestJSIcon className="cursor-pointer rounded-full border border-red-600  hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
+          <MySQLIcon className="cursor-pointer border border-b-cyan-600 rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2 " />
+          <ReactIcon className="cursor-pointer border rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
+          <NextJsIcon className="cursor-pointer  dark:bg-white rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2 " />
+          <Bootstrap5Icon className="cursor-pointer border rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
+          <TailwindCSSIcon className="cursor-pointer border rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
+          <CPlusPlusIcon className="cursor-pointer border rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
+          <GitIcon className="cursor-pointer border rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
+          <GitHubIcon className="cursor-pointer dark:bg-white rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
+          <CSS3Icon className="cursor-pointer border rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
         </div>
       </div>
     </section>
