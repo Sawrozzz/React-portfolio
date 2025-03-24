@@ -30,15 +30,15 @@ const Skill = () => {
           <NodeJsIcon className="cursor-pointer dark:bg-white border border-green-600 rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
           <ExpressJsLightIcon className="cursor-pointer dark:bg-white border border-black rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
           <NestJSIcon className="cursor-pointer rounded-full border border-red-600  hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
-          <MySQLIcon className="cursor-pointer border border-b-cyan-600 rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2 " />
-          <ReactIcon className="cursor-pointer border rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
+          <MySQLIcon className="cursor-pointer border border-cyan-600 rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2 " />
+          <ReactIcon className="cursor-pointer border border-b-cyan-400  rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
           <NextJsIcon className="cursor-pointer  dark:bg-white rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2 " />
-          <Bootstrap5Icon className="cursor-pointer border rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
-          <TailwindCSSIcon className="cursor-pointer border rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
-          <CPlusPlusIcon className="cursor-pointer border rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
-          <GitIcon className="cursor-pointer border rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
+          <Bootstrap5Icon className="cursor-pointer border border-purple-500 rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
+          <TailwindCSSIcon className="cursor-pointer border border-cyan-400 rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
+          <CPlusPlusIcon className="cursor-pointer border border-blue-800 rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
+          <GitIcon className="cursor-pointer border border-orange-400 rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
           <GitHubIcon className="cursor-pointer dark:bg-white rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
-          <CSS3Icon className="cursor-pointer border rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
+          <CSS3Icon className="cursor-pointer border border-blue-600 rounded-full hover:scale-125 transition-all duration-300 transform hover:translate-y-2" />
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@ const Footer = () => {
     <footer className="py-4 flex flex-col justify-center items-center bg-zinc-800  ">
       <div className="container mx-auto flex items-center justify-center">
         <p className="text-center font-Ubuntu text-white">
-          © 2024 Saroj Adhikari. All rights reserved.
+          © 2025 Saroj Adhikari. All rights reserved.
         </p>
       </div>
       <ul class="wrapper">
